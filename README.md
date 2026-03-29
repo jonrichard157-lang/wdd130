@@ -39,10 +39,10 @@ The focus of these projects is to build a strong foundation in HTML and CSS, fol
 ---
 
 ## 📷 Preview
-![Preview](about_project/about_rafting.png)
-![Preview](about_project/about_rafting(2).png)
-![Preview](index_html/own_page.png)
-![Preview](index_html/own_page(2).png)
+![Preview](./about_project/about_rafting.png)
+![Preview](./about_project/about_rafting(2).png)
+![Preview](./index_html/own_page.png)
+![Preview](./index_html/own_page(2).png)
 
 ---
 
