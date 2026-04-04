@@ -21,8 +21,15 @@ body {
   color: var(--accent1-color);
 }
 
-/* Layout */
-header, main, footer {
+header {
+  width: 840px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+main, footer {
   width: 840px;
   margin: 0 auto;
 }
@@ -35,13 +42,14 @@ h1, h2 {
 }
 
 /* Espaçamento padrão */
-nav, p, section, article {
+nav {
   margin: 16px;
   padding: 8px;
 }
 
-.socialmedia a {
-  text-decoration: none;
+p, section, article {
+  margin: 16px;
+  padding: 8px;
 }
 
 /* Hero (imagem principal) */
@@ -51,7 +59,6 @@ nav, p, section, article {
 
 .hero img {
   width: 100%;
-  display: block;
   height: auto;
 }
 
@@ -76,5 +83,46 @@ nav, p, section, article {
 
 /* Footer */
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socialmedia ul {
+  list-style: none;        /* remove bolinhas */
+  display: flex;           /* 🔥 coloca em linha */
+  gap: 10px;               /* espaço entre ícones */
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.adventures {
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.adventures h2 {
+  grid-column: 1 / -1;
+}
+
+.adventures img {
+  width: 100%;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header img {
+  width: 150px;
 }
