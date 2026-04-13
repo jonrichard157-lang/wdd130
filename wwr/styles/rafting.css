@@ -126,7 +126,7 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  background-color: #00000079;
+  background-color: var(--accent1-color);
   color: var(--accent1-color)
 }
 
