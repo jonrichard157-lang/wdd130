@@ -1,5 +1,6 @@
 /* CSS Variables */
 :root {
+  --white: #fff;
   --primary-color: #222;
   /* azul escuro */
   --secondary-color: #62b6cb;
@@ -31,7 +32,8 @@ header {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 840px;
+  width:100%;
+  max-width: 840px;
   z-index: 10; /* fica acima da imagem */
 }
 header img {
@@ -142,7 +144,7 @@ nav ul {
   display: flex;
   justify-content: space-evenly;
   background-color: #00000099;
-  color: var(--accent1-color)
+  color: var(--accent1-color);
 }
 
 .hero article {
@@ -198,8 +200,7 @@ button {
 }
 
 .contact-page button:hover {
-  background-color: var(--primar
-  y-color);
+  background-color: var(--primary-color);
 }
 
 .contact-page .team {
