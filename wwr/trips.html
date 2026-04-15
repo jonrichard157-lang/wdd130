@@ -4,64 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is the about page of the rafting website. It contains information about the company">
-    <meta name="author" content="João Ricardo Ribeiro da Silva">
-    <title>About Us - Rafting</title>
+    <title>Trips - Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
-    <header>
-        <img src="images/logo.jpg" alt="Rafting Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <img src="images/logo.jpg" alt="Rafting Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <main>
+<main>
 
-        <div class="hero">
-            <img src="images/hero.jpg" alt="Adventure Rapids rafting company logo">
-            <h1>White Water Rafting</h1>
-            <article>
-                <img src="images/happyclients.jpg" alt="Happy clients after rafting adventure" width="200">
-                <p>Here at Adventure Rapids, our whitewater rafting trips are crafted to give thrill-seekers an unforgettable outdoor experience. Our professional guides prioritize your safety while leading you through
-                 breathtaking scenery and exhilarating rapids. Get ready for the adventure of a lifetime!
-                </p>
-            </article>
+    <!-- HERO -->
+    <div class="hero">
+        <img src="images/hero.jpg" alt="Rafting Trips">
+        <h1>Our Trips</h1>
+    </div>
+
+    <!-- CTA -->
+    <section class="trips-cta">
+        <h2>Need help choosing a trip?</h2>
+        <p>Contact us and we’ll help you plan the perfect adventure!</p>
+        <a href="contact.html">Contact Us</a>
+    </section>
+
+    <!-- TRIPS -->
+    <section class="trips-grid">
+        <div>
+            <img src="images/trip1.jpg" alt="River Adventure">
+            <h3>River Adventure</h3>
+            <p>Perfect for beginners. Enjoy calm waters and scenic views.</p>
         </div>
 
-    </main>
+        <div>
+            <img src="images/trip2.jpg" alt="Mountain Rapids">
+            <h3>Mountain Rapids</h3>
+            <p>High adrenaline experience with strong rapids.</p>
+        </div>
 
-    <footer>
-        <p>© 2026 Adventure Rapids | João Ricardo</p>
-        <nav class="socialmedia">
-            <ul>
-                <li>
-                    <a href="https://facebook.com">
-                    <img src="images/facebook.png" alt="Facebook Logo" width="80">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://linkedin.com">
-                        <img src="images/linkedin.png" alt="LinkedIn Logo" width="80">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com">
-                    <img src="images/instagram.jpg" alt="Instagram Logo" width="80">
-                    </a>
-                </li>   
-            </ul>
-        </nav>
-    </footer>
+        <div>
+            <img src="images/trip3.jpg" alt="Family Float">
+            <h3>Family Float</h3>
+            <p>Safe and fun trip for families and kids.</p>
+        </div>
+    </section>
+
+    <!-- TABLE -->
+    <section class="trips-table">
+        <h2>Trip Information</h2>
+        <table>
+            <tr>
+                <th>Trip</th>
+                <th>Duration</th>
+                <th>Price</th>
+                <th>Difficulty</th>
+            </tr>
+            <tr>
+                <td>River Adventure</td>
+                <td>3 Hours</td>
+                <td>$50</td>
+                <td>Easy</td>
+            </tr>
+            <tr>
+                <td>Mountain Rapids</td>
+                <td>5 Hours</td>
+                <td>$80</td>
+                <td>Hard</td>
+            </tr>
+            <tr>
+                <td>Family Float</td>
+                <td>2 Hours</td>
+                <td>$40</td>
+                <td>Easy</td>
+            </tr>
+        </table>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Adventure Rapids | João Ricardo</p>
+    <nav class="socialmedia">
+        <ul>
+            <li><a href="#"><img src="images/facebook.png" width="40"></a></li>
+            <li><a href="#"><img src="images/linkedin.png" width="40"></a></li>
+            <li><a href="#"><img src="images/instagram.jpg" width="40"></a></li>
+        </ul>
+    </nav>
+</footer>
 
 </body>
-
 </html>
