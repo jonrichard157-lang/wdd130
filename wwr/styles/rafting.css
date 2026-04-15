@@ -1,9 +1,13 @@
 /* CSS Variables */
 :root {
-  --primary-color: #222;      /* azul escuro */
-  --secondary-color: #62b6cb;    /* azul claro */
-  --accent1-color: #000000;      /* azul bem claro */
-  --accent2-color: #5fa8d3;      /* azul médio */
+  --primary-color: #222;
+  /* azul escuro */
+  --secondary-color: #62b6cb;
+  /* azul claro */
+  --accent1-color: #000000;
+  /* azul bem claro */
+  --accent2-color: #5fa8d3;
+  /* azul médio */
   --heading-font: "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
@@ -23,21 +27,27 @@ body {
 }
 
 header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 840px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
+  z-index: 10; /* fica acima da imagem */
+}
+header img {
+  width: 100px;
+  height: auto;
 }
 
-main, footer {
+main,
+footer {
   width: 840px;
   margin: 0 auto;
 }
-
 
 /* Títulos */
-h1, h2 {
+h1,
+h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
@@ -48,7 +58,9 @@ nav {
   padding: 8px;
 }
 
-p, section, article {
+p,
+section,
+article {
   margin: 16px;
   padding: 8px;
 }
@@ -66,23 +78,21 @@ p, section, article {
 /* Título sobre imagem */
 .hero h1 {
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: auto;
-  padding: 10px 20px;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
   text-align: center;
-  background-color: rgba(0,0,0,0.5);
+  opacity: 0.7;
+  background-color: var(--accent1-color);
   color: white;
-  border-radius: 5px;
 }
 
 /* Artigo dentro do hero */
-/*.hero article img {
-  border:2px solid var(--accent2-color);
+.hero article img {
+  border: 2px solid var(--accent2-color);
   float: right;
   width: 125px;
-}/*
+}
 
 /* Footer */
 footer {
@@ -92,9 +102,12 @@ footer {
 }
 
 .socialmedia ul {
-  list-style: none;        /* remove bolinhas */
-  display: flex;           /* 🔥 coloca em linha */
-  gap: 10px;               /* espaço entre ícones */
+  list-style: none;
+  /* remove bolinhas */
+  display: flex;
+  /* 🔥 coloca em linha */
+  gap: 10px;
+  /* espaço entre ícones */
 }
 
 .socialmedia a {
@@ -128,27 +141,25 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  background-color: var(--accent1-color);
+  background-color: #00000099;
   color: var(--accent1-color)
 }
 
-
 .hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
 }
 
 footer a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 button {
-    background-color: var(--accent2-color);
+  background-color: var(--accent2-color);
 }
 
 /* ===== CONTACT PAGE ONLY ===== */
-
 .contact-page .company-info {
   text-align: center;
 }
@@ -187,7 +198,8 @@ button {
 }
 
 .contact-page button:hover {
-  background-color: var(--primary-color);
+  background-color: var(--primar
+  y-color);
 }
 
 .contact-page .team {
@@ -206,52 +218,43 @@ button {
   max-width: 150px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.grid img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.newsletter {
-  text-align: center;
-  margin: 40px 0;
-}
-
-.newsletter form {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.newsletter input {
-  padding: 10px;
-}
-
-header {
-  width: 100%;
-  max-width: 840px;
-}
-
-.cta {
-  background-color: #cbb89d;
-  padding: 60px;
-  display: flex;
-  justify-content: center;
-}
-
-.cta a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: var(--accent2-color);
+.home .hero h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border-radius: 5px;
 }
 
+.home .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.home .grid img {
+  width: 100%;
+}
+
+.home .newsletter form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.home .cta {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.home .cta-content {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+}
